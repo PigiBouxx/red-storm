@@ -1,6 +1,6 @@
 import discord
 import asyncio
-
+token = os.environ['TOKEN']
 client = discord.Client()
 
 @client.event
