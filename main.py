@@ -14,3 +14,4 @@ async def on_message(message):
         await client.send_message(message.channel,"hey!")
 
 client.run(token)
+print('WORK')
