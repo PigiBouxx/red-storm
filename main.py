@@ -1,8 +1,7 @@
 import discord
 import asyncio
-token = os.environ['TOKEN']
 client = discord.Client()
-
+print('WORK')
 @client.event
 async def on_ready():
     print('loggend in as: ', client.user.name)
@@ -13,5 +12,5 @@ async def on_message(message):
     if message.content == ".salut":
         await client.send_message(message.channel,"hey!")
 
-client.run(token)
-print('WORK')
+client.run("NDQ3NzQyNzg3NjgxNjQ4NjUw.DeMHjw.vtdZmKAJTglNvQyz2qxzHrfrBdE")
+
