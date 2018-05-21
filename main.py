@@ -1,7 +1,11 @@
 import discord
 import asyncio
+import safygiphy
+
+
+g = safygiphy.Giphy()
 client = discord.Client()
-print('WORK')
+
 @client.event
 async def on_ready():
     print('loggend in as: ', client.user.name)
@@ -9,8 +13,15 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content == ".salut":
-        await client.send_message(message.channel,"hey!")
+    print(message.content)
+    if message.content.startswith(".gif"):
+        r = g.random(tag=message.content[5:])
+        await client.send_message(message.channel,str(r['data']['url']))
+    elif message.content == "woedy":
+        await client.send_message(message.channel,"Il est pas la le con")
+        
+        
+        
+    
 
 client.run("NDQ3NzQyNzg3NjgxNjQ4NjUw.DeMHjw.vtdZmKAJTglNvQyz2qxzHrfrBdE")
-
