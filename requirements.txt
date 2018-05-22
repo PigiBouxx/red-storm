@@ -4,5 +4,3 @@ discord
 asyncio
 git+git://github.com/Rapptz/discord.py.git#egg=discord.py[voice]
 aiml
-
-os
