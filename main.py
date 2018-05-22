@@ -8,12 +8,12 @@ import aiml
 
 STARTUP_FILE = "std-startup.xml"
 BOT_PREFIX = ('?', '!')
-
+bot_token = "NDQ3NzQyNzg3NjgxNjQ4NjUw.DeMHjw.vtdZmKAJTglNvQyz2qxzHrfrBdE"
 
 class ChattyCathy:
-    def __init__(self, channel_name, bot_token):
+    def __init__(self, channel_name, "NDQ3NzQyNzg3NjgxNjQ4NjUw.DeMHjw.vtdZmKAJTglNvQyz2qxzHrfrBdE"):
         self.channel_name = channel_name
-        self.token = bot_token
+        self.token = "NDQ3NzQyNzg3NjgxNjQ4NjUw.DeMHjw.vtdZmKAJTglNvQyz2qxzHrfrBdE"
 
         # Load AIML kernel
         self.aiml_kernel = aiml.Kernel()
@@ -59,3 +59,4 @@ class ChattyCathy:
 
     def run(self):
         self.discord_client.run(self.token)
+ChattyCathy()
