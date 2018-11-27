@@ -15,7 +15,7 @@ client = discord.Client()
 @bot.command(pass_context=True)
 async def brent(ctx):
     voice_channel = ctx.message.author.voice.voice_channel
-    await bot.join_voice_channel(voice_channel
+    await bot.join_voice_channel(voice_channel)
 
 
 @client.event
